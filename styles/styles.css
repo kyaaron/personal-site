@@ -3,116 +3,196 @@
     padding: 0;
 }
 
+/* MOBILE FIRST STYLES */
 body {
     font-family: "Lato", sans-serif;
     margin-top: 20px;
 }
 
-/* HEADER STYLES */
 header, main {
-    margin: 5px 13% 5px 13%;
+    margin: 5px 7% 5px 7%;
 }
 
+/* --- mobile header styles --- */
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: sticky;
 }
 
 nav > ul {
-    display: flex;
     list-style-type: none;
     margin: 0;
-}
-
-nav > ul > li {
-    padding-right: 25px;
-    font-size: 1.1em;
-    transition:
-        font-size 0.25s;
-}
-
-nav > ul > li:hover {
-    font-size: 1.2em;
 }
 
 .nav-links {
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
-    margin: 0;
-    padding: 0 25px 0 0;
-    transition:
-        font-size 0.25s;
+    font-size: 1.8rem;
 }
 
-.nav-links:hover {
-    font-size: 1.2em;
+li {
+    padding-bottom: 25px;
 }
 
 #resume-btn {
     border-radius: 15px;
     border: 1px solid blue;
-    padding: 5px 10px;
+    padding: 3% 2%;
     font-family: "Lato", sans-serif;
-    font-size: 1.1em;
-    transition: 
-        border 0.25s;
+    font-size: 1.5em;
+    margin: 25px 0 0 0;
 }
 
-#resume-btn:hover {
-    border: 1px solid orange;
-}
-
-/* MAIN STYLES */
+/* --- mobile body styles --- */
 main {
-    padding: 50px 0 0 0;
+    padding: 25px 0 0 0;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+article > p {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 25px 0;
 }
 
 section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-article > p {
-    font-size: 1.7em;
 }
 
 #profile-picture-image {
-    width: 250px;
+    max-width: 350px;
     height: auto;
 }
 
-/* ABOUT ME STYLES */
-.about-me-paragraphs, .contact-me-paragraphs {
-    font-size: 1.3em;
-    padding-top: 15px;
+/* DESKTOP/LARGE MOBILE STYLES */
+@media (min-width: 750px){
+    body {
+        font-family: "Lato", sans-serif;
+        margin-top: 20px;
+    }
+
+    /* HEADER STYLES */
+    header, main {
+        margin: 5px 13% 5px 13%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+    }
+
+    nav > ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    nav > ul > li {
+        padding-right: 25px;
+        font-size: 1.1em;
+        transition:
+            font-size 0.25s;
+    }
+
+    nav > ul > li:hover {
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 25px 0 0;
+        transition:
+            font-size 0.25s;
+    }
+
+    .nav-links:hover {
+        font-size: 1.2em;
+    }
+
+    #resume-btn {
+        border-radius: 15px;
+        border: 1px solid blue;
+        padding: 5px 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.1em;
+        margin: 0;
+        transition: 
+            border 0.25s;
+    }
+
+    #resume-btn:hover {
+        border: 1px solid orange;
+    }
+
+    /* MAIN STYLES */
+    main {
+        padding: 50px 0 0 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: left;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    article > p {
+        font-size: 1.7em;
+        text-align: left;
+        margin: 0;
+    }
+
+    #profile-picture-image {
+        width: 250px;
+        height: auto;
+    }
+
+    /* ABOUT ME STYLES */
+    .about-me-paragraphs, .contact-me-paragraphs {
+        font-size: 1.3em;
+        padding-top: 15px;
+    }
+
+    /* CONTACT ME STYLES */
+    .social-icons {
+        width: 50px;
+        height: auto;
+        padding-right: 20px;
+    }
+
+    .social-links-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-text {
+        font-size: 1.3em;
+    }
+
+    .contact-me-paragraphs {
+        padding-bottom: 20px;
+    }
 }
 
-/* CONTACT ME STYLES */
-.social-icons {
-    width: 50px;
-    height: auto;
-    padding-right: 20px;
-}
-
-.social-links-section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.social-text {
-    font-size: 1.3em;
-}
-
-.contact-me-paragraphs {
-    padding-bottom: 20px;
-}
