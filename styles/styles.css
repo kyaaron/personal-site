@@ -74,6 +74,18 @@ section {
     padding-bottom: 35px;
 }
 
+.social-icons {
+    width: 150px;
+    height: auto;
+    padding-right: 0;
+}
+
+.social-text {
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
 #profile-picture-image {
     max-width: 350px;
     height: auto;
@@ -196,6 +208,7 @@ section {
 
     .social-text {
         font-size: 1.3em;
+        padding-bottom: 0;
     }
 
     .contact-me-paragraphs {
